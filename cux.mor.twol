@@ -1,11 +1,16 @@
-Alphabet 
+Alphabet
 
-! arreglar alfabeto
-a ä b c d e ë f g h i j k l m n o ö p q r s š t u v w x y z ʼ ꞉
+a á à b c d e é è f g h i í ì j k l m n ñ o ó ò p q r s t u ú ù v w x y z
 
-%>:0 ;
+%{V%}:á %{V%}:é %{V%}:í %{V%}:ó %{V%}:ú
+´:0
+
+%>:0 ; 
 
 Rules 
 
-"Remove morpheme boundary"
-%>:0 <=> _ ; 
+"Posesivo 1era persona singular"
+%{V%}:Vx <=> Vy: %>: _ ´: ;
+      where Vy in ( a e i o u ) 
+            Vx in ( á é í ó ú ) 
+      matched ; 
