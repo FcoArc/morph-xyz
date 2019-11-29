@@ -2,15 +2,9 @@ Alphabet
 
 a á à b c d e é è f g h i í ì j k l m n ñ o ó ò p q r s t u ú ù v w x y z
 
-%{V%}:á %{V%}:é %{V%}:í %{V%}:ó %{V%}:ú
-´:0
-
 %>:0 ; 
 
 Rules 
 
-"Posesivo 1era persona singular"
-%{V%}:Vx <=> Vy: %>: _ ´: ;
-      where Vy in ( a e i o u ) 
-            Vx in ( á é í ó ú ) 
-      matched ; 
+"Quitar frontera de morfema"
+%>:0 <=> _ ;
