@@ -14,3 +14,6 @@ cux.mor.hfst: cux.gen.hfst
 
 cux.mor.hfstol: cux.mor.hfst
 	hfst-fst2fst -w $< -o $@
+
+cux.mor.twol.hfst: cux.mor.twol
+	hfst-twolc $< -o $@
