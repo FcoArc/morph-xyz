@@ -20,3 +20,6 @@ cux.mor.twol.hfst: cux.mor.twol
 	
 cux.mor.twol.hfst: cux.mor.twol
 	hfst-twolc cux.mor.twol -o cux.mor.twol.hfst
+
+cux.seg.hfst: cux.mor.hfst cux.gen.hfst
+	hfst-compose -1 cux.mor.hfst -2 cux.gen.hfst -o cux.seg.hfst
