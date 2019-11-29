@@ -5,7 +5,7 @@ a á à b c d e é è f g h i í ì j k l m n ñ o ó ò p q r s t u ú ù v w x
 %{V%}:á %{V%}:é %{V%}:í %{V%}:ó %{V%}:ú
 ´:0
 
-%>:0 ; 
+%> ; 
 
 Rules 
 
